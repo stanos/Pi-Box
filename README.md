@@ -14,7 +14,7 @@ Lasdoos inhoud:
 Raspberry Pi 3B+,
 8-relais module (voorkeur solid state, mechanisch kan ook),
 Chassis connectoren,
-Debug led'92s voor het snelle inzien van mogelijke error'92s,
+Debug led's voor het snelle inzien van mogelijke error's,
 GPS module,
 
 Nice to have / volgende versie:
