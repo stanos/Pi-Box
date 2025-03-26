@@ -1,13 +1,13 @@
 #ifndef Config_H_
 #define Config_H_
 
-static char* path;
+extern FILE *f;
 
-static int relays[8];
-static int leds[5];
+extern int relays[8];
+extern int leds[5];
 
-static int start_button;
-static int end_button;
+extern int start_button;
+extern int end_button;
 
 
 #endif 

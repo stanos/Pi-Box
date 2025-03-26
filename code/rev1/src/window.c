@@ -6,6 +6,7 @@
 
 int i;
 
+
 G_MODULE_EXPORT void cycle_slow (GtkWidget *widget, gpointer data) {
   cycle_relays(1, 100);
   usleep(100 * 1000);
@@ -19,11 +20,9 @@ G_MODULE_EXPORT void cycle_fast (GtkWidget *widget, gpointer data) {
 }
 
 G_MODULE_EXPORT void cycle_thru_relays() {
-  for (int cyclethru=0; cyclethru < sizeof(relays); cyclethru++) {
-    gpio_set(relays[cyclethru], 1);
-    gpio_set(relays[cyclethru-1], 0);
-    g_print ("cycle ", cyclethru);
-  }
+  gpio_set(21, 1);
+  usleep(10 * 1000);
+  gpio_set(21, 0);
 }
 
 G_MODULE_EXPORT void quit(GtkWindow* window) {
@@ -37,11 +36,13 @@ static void activate (GtkApplication *app, gpointer user_data) {
   GtkWidget *cycle_f;
   GtkWidget *cycle_s;
   
-  build = gtk_builder_new_from_file (strcat(path,  "/ui/window.ui"));
+  build = gtk_builder_new_from_file ("/home/stanos/pi-box/code/rev1/ui/window.ui");
   win = GTK_WIDGET (gtk_builder_get_object (build, "win"));
   gtk_window_set_application (GTK_WINDOW (win), GTK_APPLICATION (app));
   g_object_unref(build);
   
+  gtk_window_fullscreen(GTK_WINDOW(win));
+
   gtk_window_present (GTK_WINDOW (win));
   
 }

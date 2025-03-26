@@ -29,4 +29,5 @@ CMakeFiles/Pi-Box.dir/src/gpio/gpio.c.o: \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/aarch64-linux-gnu/bits/floatn.h \
  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /home/stanos/pi-box/code/rev1/src/gpio/gpio.h
+ /home/stanos/pi-box/code/rev1/src/gpio/gpio.h \
+ /home/stanos/pi-box/code/rev1/src/gpio/../Config.h

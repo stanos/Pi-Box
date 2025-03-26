@@ -763,4 +763,5 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: \
  /usr/include/gtk-4.0/gtk/gtkwindowgroup.h \
  /usr/include/gtk-4.0/gtk/gtkwindow.h \
  /usr/include/gtk-4.0/gtk/gtkwindowhandle.h \
+ /home/stanos/pi-box/code/rev1/src/Config.h \
  /home/stanos/pi-box/code/rev1/src/gpio/gpio.h /usr/include/wiringPi.h
