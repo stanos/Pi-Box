@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkApplicationWindow" id="win">
+    <property name="title">Pi-Box</property>
+    <property name="default-width">600</property>
+    <property name="default-height">400</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="width-chars">10</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <signal name="clicked" handler="quit" />
+                <property name="label">Quit</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="cycle_f">
+                <signal name="clicked" handler="cycle_fast" />
+                <property name="label">Cycle Relays Fast</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="cycle_s">
+                <signal name="clicked" handler="cycle_slow" />
+                <property name="label">Cycle Relays Slow</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="cycle_thru">
+                <signal name="clicked" handler="cycle_thru_relays" />
+                <property name="label">Cycle Thru Relays</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
