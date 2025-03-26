@@ -5,6 +5,7 @@ extern FILE *f;
 
 extern int relays[8];
 extern int leds[5];
+extern int status_led;
 
 extern int start_button;
 extern int end_button;

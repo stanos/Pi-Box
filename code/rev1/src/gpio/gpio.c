@@ -9,9 +9,9 @@
 void* program_run_blink(void* vargp) {
     int i = 0;
     while (i < 1) {
-        digitalWrite(leds[0], HIGH);
+        digitalWrite(status_led, HIGH);
         usleep(1000 * 1000);
-        digitalWrite(leds[0], LOW);
+        digitalWrite(status_led, LOW);
         usleep(1000 * 1000);
     }
 }
