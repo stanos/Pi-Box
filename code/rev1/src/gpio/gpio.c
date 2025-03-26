@@ -62,6 +62,23 @@ int cycle_relays(int value, int delay) {
     return 0;
 }
 
+int cycle_leds(int value, int delay) {
+    if (value == 1) {
+        for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
+            digitalWrite(leds[led], HIGH);
+            usleep(delay * 1000);
+        }
+    } else if (value == 0) {
+        for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
+            digitalWrite(leds[led], LOW);
+            usleep(delay * 1000);
+        }
+    } else {
+        printf("value needs to specified\n");
+    }
+    return 0;
+}
+
 int gpio_set(int pin, int value) {
     digitalWrite(pin, value);
 }

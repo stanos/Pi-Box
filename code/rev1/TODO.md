@@ -1,0 +1,1 @@
+Cylce thru function for both relays and leds;
