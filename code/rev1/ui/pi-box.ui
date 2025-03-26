@@ -104,7 +104,7 @@
             </child>
             <child>
               <object class="GtkButton">
-                <property name="label">Cycle Thru Leds</property>
+                <property name="label">Random Leds (Unstopable)</property>
                 <signal name="clicked" handler="cycle_thru_leds"/>
                 <layout>
                   <property name="column">1</property>

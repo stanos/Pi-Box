@@ -41,9 +41,13 @@ G_MODULE_EXPORT void cycle_thru_relays() {
 }
 
 G_MODULE_EXPORT void cycle_thru_leds() {
-  gpio_set(21, 1);
-  usleep(10 * 1000);
-  gpio_set(21, 0);
+  int z = 0;
+  while (z < 1) {
+    int value = rand() % (4 - 0 + 1) + 0;
+    gpio_set(leds[value], 1);
+    usleep(500 * 1000);
+    gpio_set(leds[value], 0);
+  }
 }
 
 G_MODULE_EXPORT void quit(GtkWindow* window) {
@@ -64,7 +68,7 @@ static void activate (GtkApplication *app, gpointer user_data) {
   g_object_unref(build);
   
   gtk_window_fullscreen(GTK_WINDOW(win));
-
+  
   gtk_window_present (GTK_WINDOW (win));
   
 }
@@ -77,6 +81,6 @@ int init_window (int argc, char **argv) {
   g_signal_connect (app, "activate", G_CALLBACK (activate), NULL);
   status = g_application_run (G_APPLICATION (app), argc, argv);
   g_object_unref (app);
-
+  
   return status;
 }
