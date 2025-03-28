@@ -4,7 +4,7 @@
 extern bool verbose;
 
 extern int relays[8];
-extern int leds[5];
+extern int leds[2];
 extern int status_led;
 
 extern int start_button;

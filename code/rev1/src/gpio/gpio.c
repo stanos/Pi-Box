@@ -26,6 +26,24 @@ void* program_run_blink(void* vargp) {
 int init_gpio() {
 	wiringPiSetupGpio();
 	
+	// 
+	for (int relay = 0; relay < sizeof(relays) / sizeof(relays[0]); relay++) {
+		pinMode(relays[relay], OUTPUT);
+	}
+	for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
+		pinMode(leds[led], OUTPUT);
+	}
+	
+	pinMode(status_led, OUTPUT);
+
+	pinMode(start_button, INPUT);
+	pullUpDnControl(start_button, PUD_UP);
+	
+	pinMode(end_button, INPUT);
+	pullUpDnControl(end_button, PUD_UP);
+}
+
+int gpio_setup() {
 	if (verbose) {		
 		// Print the specified "Relay Pins";
 		printf("Relay Pins:\n");
@@ -36,7 +54,6 @@ int init_gpio() {
 		printf("Status Led:\n");
 		printf("%i,\n", status_led);
 		printf("\n");
-		pinMode(status_led, OUTPUT);
 		// Print the specified "Led Pins";
 		printf("Led Pins:\n");
 		for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
@@ -44,19 +61,6 @@ int init_gpio() {
 		}
 		printf("\n\n");
 	}
-	// 
-	for (int relay = 0; relay < sizeof(relays) / sizeof(relays[0]); relay++) {
-		pinMode(relays[relay], OUTPUT);
-	}
-	for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
-		pinMode(leds[led], OUTPUT);
-	}
-	
-	pinMode(start_button, INPUT);
-	pullUpDnControl(start_button, PUD_UP);
-	
-	pinMode(end_button, INPUT);
-	pullUpDnControl(end_button, PUD_UP);
 }
 
 int cycle_relays(int value, int delay) {

@@ -20,9 +20,9 @@ G_MODULE_EXPORT void cycle_slow_led (GtkWidget *widget, gpointer data) {
 
 // Function ran when "Cycle Leds Slow" button is pressed;
 G_MODULE_EXPORT void cycle_slow_relay (GtkWidget *widget, gpointer data) {
-  cycle_relays(1, 100);
-  usleep(100 * 1000);
   cycle_relays(0, 100);
+  usleep(100 * 1000);
+  cycle_relays(1, 100);
 }
 
 // Function ran when "Cycle Leds Fast" button is pressed;
@@ -34,9 +34,9 @@ G_MODULE_EXPORT void cycle_fast_led (GtkWidget *widget, gpointer data) {
 
 // Function ran when "Cycle Relays Fast" button is pressed;
 G_MODULE_EXPORT void cycle_fast_relay (GtkWidget *widget, gpointer data) {
-  cycle_relays(1, 10);
-  usleep(10 * 1000);
   cycle_relays(0, 10);
+  usleep(10 * 1000);
+  cycle_relays(1, 10);
 }
 
 // Function ran when "Cycle Thru Relays" button is pressed;
