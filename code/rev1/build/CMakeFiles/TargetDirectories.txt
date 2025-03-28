@@ -1,3 +1,0 @@
-/home/stanos/pi-box/code/rev1/build/CMakeFiles/Pi-Box.dir
-/home/stanos/pi-box/code/rev1/build/CMakeFiles/edit_cache.dir
-/home/stanos/pi-box/code/rev1/build/CMakeFiles/rebuild_cache.dir
