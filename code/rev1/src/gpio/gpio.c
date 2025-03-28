@@ -31,13 +31,16 @@ int init_gpio() {
 		printf("%i, ", relays[relay]);
 	}
 	printf("\n\n");
-
+	printf("Status Led:\n");
+	printf("%i", status_led);
+	printf("\n");
+	pinMode(status_led, OUTPUT);
 	// Print the specified "Led Pins";
 	printf("Led Pins:\n");
 	for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
 		printf("%i, ", leds[led]);
 	}
-	printf("\n");
+	printf("\n\n");
 
 	// 
 	for (int relay = 0; relay < sizeof(relays) / sizeof(relays[0]); relay++) {
@@ -90,4 +93,12 @@ int cycle_leds(int value, int delay) {
 
 int gpio_set(int pin, int value) {
 	digitalWrite(pin, value);
+}
+
+int gpio_get(int pin, int value) {
+	if (digitalRead(pin) == value) {
+		return 1;
+	} else {
+		return 0;
+	}
 }

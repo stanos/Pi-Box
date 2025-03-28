@@ -38,35 +38,20 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min.h \
- /home/stanos/pi-box/code/rev1/src/gpio/gpio.h /usr/include/wiringPi.h \
- /home/stanos/pi-box/code/rev1/src/window.h \
- /usr/include/gtk-4.0/gtk/gtk.h /usr/include/gtk-4.0/gtk/css/gtkcss.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
- /usr/lib/aarch64-linux-gnu/glib-2.0/include/glibconfig.h \
- /usr/include/glib-2.0/glib/gmacros.h \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/limits.h \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h \
- /usr/include/limits.h \
+ /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
- /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
- /usr/include/aarch64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/float.h \
- /usr/include/glib-2.0/glib/gversionmacros.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/glib-2.0/glib/garray.h \
- /usr/include/glib-2.0/glib/gasyncqueue.h \
- /usr/include/glib-2.0/glib/gthread.h \
- /usr/include/glib-2.0/glib/gatomic.h \
- /usr/include/glib-2.0/glib/glib-typeof.h \
- /usr/include/glib-2.0/glib/gerror.h \
  /usr/lib/gcc/aarch64-linux-gnu/12/include/stdarg.h \
- /usr/include/glib-2.0/glib/gquark.h /usr/include/glib-2.0/glib/gutils.h \
- /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
- /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/aarch64-linux-gnu/bits/floatn.h \
  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
+ /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
+ /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
  /usr/include/aarch64-linux-gnu/sys/types.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
@@ -76,6 +61,35 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
  /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/unistd.h \
+ /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+ /usr/include/aarch64-linux-gnu/bits/environments.h \
+ /usr/include/aarch64-linux-gnu/bits/confname.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /home/stanos/pi-box/code/rev1/src/gpio/gpio.h /usr/include/wiringPi.h \
+ /home/stanos/pi-box/code/rev1/src/window.h \
+ /usr/include/gtk-4.0/gtk/gtk.h /usr/include/gtk-4.0/gtk/css/gtkcss.h \
+ /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
+ /usr/include/glib-2.0/glib/gtypes.h \
+ /usr/lib/aarch64-linux-gnu/glib-2.0/include/glibconfig.h \
+ /usr/include/glib-2.0/glib/gmacros.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/limits.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h \
+ /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/float.h \
+ /usr/include/glib-2.0/glib/gversionmacros.h \
+ /usr/include/glib-2.0/glib/garray.h \
+ /usr/include/glib-2.0/glib/gasyncqueue.h \
+ /usr/include/glib-2.0/glib/gthread.h \
+ /usr/include/glib-2.0/glib/gatomic.h \
+ /usr/include/glib-2.0/glib/glib-typeof.h \
+ /usr/include/glib-2.0/glib/gerror.h /usr/include/glib-2.0/glib/gquark.h \
+ /usr/include/glib-2.0/glib/gutils.h \
  /usr/include/glib-2.0/glib/gbacktrace.h /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
  /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
@@ -227,13 +241,7 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: \
  /usr/include/glib-2.0/gio/gcontenttype.h \
  /usr/include/glib-2.0/gio/gconverterinputstream.h \
  /usr/include/glib-2.0/gio/gconverteroutputstream.h \
- /usr/include/glib-2.0/gio/gcredentials.h /usr/include/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/glib-2.0/gio/gcredentials.h \
  /usr/include/glib-2.0/gio/gdatagrambased.h \
  /usr/include/glib-2.0/gio/gdatainputstream.h \
  /usr/include/glib-2.0/gio/gdataoutputstream.h \
@@ -406,14 +414,7 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: \
  /usr/include/pango-1.0/pango/pango-tabs.h \
  /usr/include/pango-1.0/pango/pango-markup.h \
  /usr/include/pango-1.0/pango/pango-renderer.h \
- /usr/include/pango-1.0/pango/pango-utils.h /usr/include/stdio.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/pango-1.0/pango/pango-utils.h \
  /usr/include/gtk-4.0/gdk/gdkconfig.h /usr/include/gtk-4.0/gdk/gdkcairo.h \
  /usr/include/gtk-4.0/gdk/gdkrgba.h /usr/include/gtk-4.0/gdk/gdkpixbuf.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h \

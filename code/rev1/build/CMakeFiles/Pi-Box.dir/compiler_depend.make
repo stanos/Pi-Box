@@ -121,6 +121,41 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: /home/stanos/pi-box/code/rev1/src/main.c \
   /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/aarch64-linux-gnu/bits/pthread_stack_min.h \
+  /usr/include/stdio.h \
+  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
+  /usr/lib/gcc/aarch64-linux-gnu/12/include/stdarg.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/aarch64-linux-gnu/bits/floatn.h \
+  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
+  /usr/include/stdlib.h \
+  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
+  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
+  /usr/include/aarch64-linux-gnu/sys/types.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
+  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/aarch64-linux-gnu/sys/select.h \
+  /usr/include/aarch64-linux-gnu/bits/select.h \
+  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/alloca.h \
+  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/unistd.h \
+  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+  /usr/include/aarch64-linux-gnu/bits/environments.h \
+  /usr/include/aarch64-linux-gnu/bits/confname.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
   /home/stanos/pi-box/code/rev1/src/gpio/gpio.h \
   /usr/include/wiringPi.h \
   /home/stanos/pi-box/code/rev1/src/window.h \
@@ -134,40 +169,20 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: /home/stanos/pi-box/code/rev1/src/main.c \
   /usr/lib/gcc/aarch64-linux-gnu/12/include/limits.h \
   /usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h \
   /usr/include/limits.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
   /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
   /usr/include/aarch64-linux-gnu/bits/local_lim.h \
   /usr/include/linux/limits.h \
   /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
   /usr/lib/gcc/aarch64-linux-gnu/12/include/float.h \
   /usr/include/glib-2.0/glib/gversionmacros.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/glib-2.0/glib/garray.h \
   /usr/include/glib-2.0/glib/gasyncqueue.h \
   /usr/include/glib-2.0/glib/gthread.h \
   /usr/include/glib-2.0/glib/gatomic.h \
   /usr/include/glib-2.0/glib/glib-typeof.h \
   /usr/include/glib-2.0/glib/gerror.h \
-  /usr/lib/gcc/aarch64-linux-gnu/12/include/stdarg.h \
   /usr/include/glib-2.0/glib/gquark.h \
   /usr/include/glib-2.0/glib/gutils.h \
-  /usr/include/stdlib.h \
-  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
-  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/sys/types.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
-  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/bits/select.h \
-  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/alloca.h \
-  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
   /usr/include/glib-2.0/glib/gbacktrace.h \
   /usr/include/signal.h \
   /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
@@ -343,13 +358,6 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: /home/stanos/pi-box/code/rev1/src/main.c \
   /usr/include/glib-2.0/gio/gconverterinputstream.h \
   /usr/include/glib-2.0/gio/gconverteroutputstream.h \
   /usr/include/glib-2.0/gio/gcredentials.h \
-  /usr/include/unistd.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
   /usr/include/glib-2.0/gio/gdatagrambased.h \
   /usr/include/glib-2.0/gio/gdatainputstream.h \
   /usr/include/glib-2.0/gio/gdataoutputstream.h \
@@ -538,14 +546,6 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: /home/stanos/pi-box/code/rev1/src/main.c \
   /usr/include/pango-1.0/pango/pango-markup.h \
   /usr/include/pango-1.0/pango/pango-renderer.h \
   /usr/include/pango-1.0/pango/pango-utils.h \
-  /usr/include/stdio.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
   /usr/include/gtk-4.0/gdk/gdkconfig.h \
   /usr/include/gtk-4.0/gdk/gdkcairo.h \
   /usr/include/gtk-4.0/gdk/gdkrgba.h \
@@ -2398,6 +2398,8 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/include/aarch64-linux-gnu/sys/cdefs.h:
 
+/usr/include/gtk-4.0/gdk/gdktypes.h:
+
 /usr/include/errno.h:
 
 /usr/include/glib-2.0/glib/garray.h:
@@ -2405,8 +2407,6 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/linux/limits.h:
-
-/usr/include/gtk-4.0/gdk/gdktypes.h:
 
 /usr/include/graphene-1.0/graphene-quad.h:
 
@@ -2688,60 +2688,6 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/include/glib-2.0/gio/gemblemedicon.h:
 
-/usr/lib/linux/uapi/arm64/asm/errno.h:
-
-/usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h:
-
-/usr/include/glib-2.0/glib/gconvert.h:
-
-/usr/include/gtk-4.0/gtk/gtknotebook.h:
-
-/home/stanos/pi-box/code/rev1/src/window.h:
-
-/usr/include/glib-2.0/gio/gmemorymonitor.h:
-
-/usr/include/glib-2.0/glib/gbytes.h:
-
-/usr/include/glib-2.0/glib/gtestutils.h:
-
-/usr/include/glib-2.0/glib/gspawn.h:
-
-/usr/include/glib-2.0/glib/gmessages.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/gtk-4.0/gdk/gdktexture.h:
-
-/usr/include/gtk-4.0/gtk/gtkstringlist.h:
-
-/usr/include/glib-2.0/glib/gtypes.h:
-
-/usr/include/aarch64-linux-gnu/bits/time64.h:
-
-/usr/include/glib-2.0/gio/gsimpleaction.h:
-
-/usr/include/glib-2.0/gio/gsimpleasyncresult.h:
-
-/usr/lib/aarch64-linux-gnu/glib-2.0/include/glibconfig.h:
-
-/usr/include/glib-2.0/gio/gdbusmenumodel.h:
-
-/usr/include/glib-2.0/gio/gdbusnameowning.h:
-
-/usr/include/glib-2.0/gobject/genums.h:
-
-/usr/include/gtk-4.0/gtk/gtktext.h:
-
-/usr/include/gtk-4.0/gdk/gdkcairo.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/glib-2.0/gio/gtcpconnection.h:
-
-/usr/include/gtk-4.0/gdk/gdkpixbuf.h:
-
 /usr/lib/gcc/aarch64-linux-gnu/12/include/limits.h:
 
 /usr/include/gtk-4.0/gdk/gdkvulkancontext.h:
@@ -2756,40 +2702,6 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/lib/linux/uapi/arm64/asm/sigcontext.h:
 
-/usr/include/glib-2.0/glib/gkeyfile.h:
-
-/usr/include/aarch64-linux-gnu/bits/sched.h:
-
-/usr/include/strings.h:
-
-/usr/include/signal.h:
-
-/usr/include/wiringPi.h:
-
-/usr/include/glib-2.0/glib/gpattern.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/gtk-4.0/gdk/gdkmonitor.h:
-
-/usr/include/glib-2.0/glib/gthread.h:
-
-/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h:
-
-/usr/include/time.h:
-
-/usr/include/glib-2.0/glib/gasyncqueue.h:
-
-/usr/include/gtk-4.0/gdk/gdkkeysyms.h:
-
-/usr/include/glib-2.0/glib/gatomic.h:
-
-/usr/include/gtk-4.0/gdk/gdkversionmacros.h:
-
-/usr/include/glib-2.0/glib/gquark.h:
-
-/usr/include/glib-2.0/glib/gstring.h:
-
 /usr/include/aarch64-linux-gnu/bits/waitflags.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/FILE.h:
@@ -2802,6 +2714,18 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/include/pango-1.0/pango/pango-glyph.h:
 
+/usr/include/glib-2.0/glib/gbytes.h:
+
+/usr/include/glib-2.0/glib/gtestutils.h:
+
+/usr/include/glib-2.0/glib/gspawn.h:
+
+/usr/include/glib-2.0/glib/gmessages.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/gtk-4.0/gdk/gdktexture.h:
+
 /usr/include/endian.h:
 
 /usr/include/gtk-4.0/gtk/gtkdrawingarea.h:
@@ -2813,10 +2737,6 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 /usr/include/aarch64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/glib-2.0/gio/gasyncresult.h:
-
-/usr/include/glib-2.0/gobject/glib-enumtypes.h:
-
-/usr/include/aarch64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/glib-2.0/glib/deprecated/gcache.h:
 
@@ -2869,6 +2789,86 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 /usr/include/glib-2.0/gio/gnetworkservice.h:
 
 /usr/include/asm-generic/int-ll64.h:
+
+/usr/include/aarch64-linux-gnu/bits/time64.h:
+
+/usr/include/glib-2.0/gio/gsimpleaction.h:
+
+/usr/include/glib-2.0/gio/gsimpleasyncresult.h:
+
+/usr/include/gtk-4.0/gtk/gtkstringlist.h:
+
+/usr/include/glib-2.0/glib/gtypes.h:
+
+/usr/include/glib-2.0/glib/gkeyfile.h:
+
+/usr/include/aarch64-linux-gnu/bits/sched.h:
+
+/usr/include/strings.h:
+
+/usr/include/signal.h:
+
+/usr/lib/linux/uapi/arm64/asm/errno.h:
+
+/usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h:
+
+/usr/include/glib-2.0/glib/gconvert.h:
+
+/usr/include/gtk-4.0/gtk/gtknotebook.h:
+
+/home/stanos/pi-box/code/rev1/src/window.h:
+
+/usr/include/glib-2.0/gio/gmemorymonitor.h:
+
+/usr/lib/aarch64-linux-gnu/glib-2.0/include/glibconfig.h:
+
+/usr/include/glib-2.0/gio/gdbusmenumodel.h:
+
+/usr/include/glib-2.0/gio/gdbusnameowning.h:
+
+/usr/include/glib-2.0/gobject/genums.h:
+
+/usr/include/gtk-4.0/gtk/gtktext.h:
+
+/usr/include/gtk-4.0/gdk/gdkcairo.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/glib-2.0/gio/gtcpconnection.h:
+
+/usr/include/gtk-4.0/gdk/gdkpixbuf.h:
+
+/usr/include/wiringPi.h:
+
+/usr/include/glib-2.0/glib/gpattern.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/gtk-4.0/gdk/gdkmonitor.h:
+
+/usr/include/glib-2.0/glib/gthread.h:
+
+/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h:
+
+/usr/include/time.h:
+
+/usr/include/glib-2.0/glib/gasyncqueue.h:
+
+/usr/include/gtk-4.0/gdk/gdkkeysyms.h:
+
+/usr/include/glib-2.0/glib/gatomic.h:
+
+/usr/include/gtk-4.0/gdk/gdkversionmacros.h:
+
+/usr/include/glib-2.0/glib/gquark.h:
+
+/usr/include/glib-2.0/gobject/glib-enumtypes.h:
+
+/usr/include/aarch64-linux-gnu/bits/signum-arch.h:
+
+/usr/include/glib-2.0/glib/gstring.h:
 
 /usr/include/gtk-4.0/gtk/gtkpapersize.h:
 

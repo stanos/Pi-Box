@@ -49,7 +49,7 @@ G_MODULE_EXPORT void cycle_thru_relays() {
 }
 
 // Function ran when "Cycle Thru Leds" button is pressed;
-G_MODULE_EXPORT void cycle_thru_leds() {
+G_MODULE_EXPORT void cycle_random_leds() {
   int z = 0;
   while (z < 1) {
     int value = rand() % (4 - 0 + 1) + 0;
