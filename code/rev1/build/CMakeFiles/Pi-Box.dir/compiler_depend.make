@@ -39,7 +39,8 @@ CMakeFiles/Pi-Box.dir/src/Config.c.o: /home/stanos/pi-box/code/rev1/src/Config.c
   /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h
+  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
+  /usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h
 
 CMakeFiles/Pi-Box.dir/src/gpio/gpio.c.o: /home/stanos/pi-box/code/rev1/src/gpio/gpio.c \
   /usr/include/stdc-predef.h \
@@ -75,6 +76,7 @@ CMakeFiles/Pi-Box.dir/src/gpio/gpio.c.o: /home/stanos/pi-box/code/rev1/src/gpio/
   /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
   /usr/include/aarch64-linux-gnu/bits/floatn.h \
   /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h \
   /home/stanos/pi-box/code/rev1/src/gpio/gpio.h \
   /home/stanos/pi-box/code/rev1/src/Config.h
 
@@ -156,6 +158,7 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: /home/stanos/pi-box/code/rev1/src/main.c \
   /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
   /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
   /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+  /usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h \
   /home/stanos/pi-box/code/rev1/src/gpio/gpio.h \
   /usr/include/wiringPi.h \
   /home/stanos/pi-box/code/rev1/src/window.h \
@@ -615,7 +618,6 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: /home/stanos/pi-box/code/rev1/src/main.c \
   /usr/lib/gcc/aarch64-linux-gnu/12/include/arm_fp16.h \
   /usr/lib/gcc/aarch64-linux-gnu/12/include/arm_bf16.h \
   /usr/include/graphene-1.0/graphene-macros.h \
-  /usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h \
   /usr/include/graphene-1.0/graphene-version-macros.h \
   /usr/include/graphene-1.0/graphene-version.h \
   /usr/include/graphene-1.0/graphene-simd4f.h \
@@ -2112,8 +2114,6 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/include/graphene-1.0/graphene-simd4x4f.h:
 
-/usr/include/glib-2.0/gio/gaction.h:
-
 /usr/include/glib-2.0/gio/giotypes.h:
 
 /usr/include/glib-2.0/gio/gio.h:
@@ -2418,18 +2418,6 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/include/aarch64-linux-gnu/bits/environments.h:
 
-/usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/harfbuzz/hb-blob.h:
-
-/home/stanos/pi-box/code/rev1/src/gpio/gpio.c:
-
-/usr/include/gtk-4.0/gtk/gtkstylecontext.h:
-
-/usr/include/aarch64-linux-gnu/bits/procfs-prregset.h:
-
-/usr/include/features-time64.h:
-
 /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/floatn-common.h:
@@ -2494,9 +2482,27 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h:
 
+/usr/include/gtk-4.0/gtk/gtkstylecontext.h:
+
+/usr/include/aarch64-linux-gnu/bits/procfs-prregset.h:
+
+/usr/include/features-time64.h:
+
+/home/stanos/pi-box/code/rev1/src/gpio/gpio.c:
+
 /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/aarch64-linux-gnu/bits/long-double.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/gtk-4.0/gtk/gtkeditable.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/glib-2.0/gio/gnetworkservice.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h:
 
@@ -2604,6 +2610,8 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/include/aarch64-linux-gnu/sys/user.h:
 
+/usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h:
+
 /usr/include/gtk-4.0/gtk/gtkshortcut.h:
 
 /usr/include/aarch64-linux-gnu/bits/dirent_ext.h:
@@ -2639,6 +2647,10 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 /usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/glib-2.0/gio/gbytesicon.h:
+
+/usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/harfbuzz/hb-blob.h:
 
 /usr/include/aarch64-linux-gnu/bits/procfs-extra.h:
 
@@ -2780,16 +2792,6 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 
 /usr/lib/linux/uapi/arm64/asm/types.h:
 
-/usr/include/gtk-4.0/gtk/gtkeditable.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/signal_ext.h:
-
-/usr/include/glib-2.0/gio/gnetworkservice.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
 /usr/include/aarch64-linux-gnu/bits/time64.h:
 
 /usr/include/glib-2.0/gio/gsimpleaction.h:
@@ -2875,6 +2877,8 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 /usr/include/glib-2.0/gobject/gbinding.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/glib-2.0/gio/gaction.h:
 
 /usr/include/glib-2.0/gio/gactiongroupexporter.h:
 
@@ -3387,8 +3391,6 @@ CMakeFiles/Pi-Box.dir/src/window.c.o: /home/stanos/pi-box/code/rev1/src/window.c
 /usr/lib/gcc/aarch64-linux-gnu/12/include/arm_neon.h:
 
 /usr/lib/gcc/aarch64-linux-gnu/12/include/arm_fp16.h:
-
-/usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h:
 
 /usr/include/graphene-1.0/graphene-version.h:
 

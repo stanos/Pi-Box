@@ -68,6 +68,7 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: \
  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h \
  /home/stanos/pi-box/code/rev1/src/gpio/gpio.h /usr/include/wiringPi.h \
  /home/stanos/pi-box/code/rev1/src/window.h \
  /usr/include/gtk-4.0/gtk/gtk.h /usr/include/gtk-4.0/gtk/css/gtkcss.h \
@@ -476,7 +477,6 @@ CMakeFiles/Pi-Box.dir/src/main.c.o: \
  /usr/lib/gcc/aarch64-linux-gnu/12/include/arm_fp16.h \
  /usr/lib/gcc/aarch64-linux-gnu/12/include/arm_bf16.h \
  /usr/include/graphene-1.0/graphene-macros.h \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h \
  /usr/include/graphene-1.0/graphene-version-macros.h \
  /usr/include/graphene-1.0/graphene-version.h \
  /usr/include/graphene-1.0/graphene-simd4f.h /usr/include/math.h \

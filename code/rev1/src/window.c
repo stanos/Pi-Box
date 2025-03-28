@@ -1,6 +1,7 @@
 // Include system modules;
 #include <gtk/gtk.h>
 #include <unistd.h>
+#include <stdbool.h>
 
 // Include local modules;
 #include "Config.h"

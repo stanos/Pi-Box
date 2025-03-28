@@ -34,4 +34,5 @@ CMakeFiles/Pi-Box.dir/src/Config.c.o: \
  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h
+ /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/stdbool.h

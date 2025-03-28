@@ -3,6 +3,7 @@
 
 #include <unistd.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 // Include local modules;
 #include "gpio.h"
@@ -24,24 +25,25 @@ void* program_run_blink(void* vargp) {
 // This function in initiated from the main.c file to initialize the gpio pins specified in the Config.c file;
 int init_gpio() {
 	wiringPiSetupGpio();
-
-	// Print the specified "Relay Pins";
-	printf("Relay Pins:\n");
-	for (int relay = 0; relay < sizeof(relays) / sizeof(relays[0]); relay++) {
-		printf("%i, ", relays[relay]);
+	
+	if (verbose) {		
+		// Print the specified "Relay Pins";
+		printf("Relay Pins:\n");
+		for (int relay = 0; relay < sizeof(relays) / sizeof(relays[0]); relay++) {
+			printf("%i, ", relays[relay]);
+		}
+		printf("\n\n");
+		printf("Status Led:\n");
+		printf("%i,\n", status_led);
+		printf("\n");
+		pinMode(status_led, OUTPUT);
+		// Print the specified "Led Pins";
+		printf("Led Pins:\n");
+		for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
+			printf("%i, ", leds[led]);
+		}
+		printf("\n\n");
 	}
-	printf("\n\n");
-	printf("Status Led:\n");
-	printf("%i", status_led);
-	printf("\n");
-	pinMode(status_led, OUTPUT);
-	// Print the specified "Led Pins";
-	printf("Led Pins:\n");
-	for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
-		printf("%i, ", leds[led]);
-	}
-	printf("\n\n");
-
 	// 
 	for (int relay = 0; relay < sizeof(relays) / sizeof(relays[0]); relay++) {
 		pinMode(relays[relay], OUTPUT);
@@ -49,10 +51,10 @@ int init_gpio() {
 	for (int led = 0; led < sizeof(leds) / sizeof(leds[0]); led++) {
 		pinMode(leds[led], OUTPUT);
 	}
-
+	
 	pinMode(start_button, INPUT);
 	pullUpDnControl(start_button, PUD_UP);
-
+	
 	pinMode(end_button, INPUT);
 	pullUpDnControl(end_button, PUD_UP);
 }

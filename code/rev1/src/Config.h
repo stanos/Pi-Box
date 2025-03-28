@@ -1,7 +1,7 @@
 #ifndef Config_H_
 #define Config_H_
 
-extern FILE *f;
+extern bool verbose;
 
 extern int relays[8];
 extern int leds[5];
