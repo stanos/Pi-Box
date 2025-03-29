@@ -10,6 +10,9 @@
 #include "Config.h"
 
 void* random_relay_mode(int delay) {
+	if (verbose) {
+		printf("Random Relay!\nDelay: %i\n\n", delay);
+	}
 	int z = 0;
 	while (z < 1) {
 		int value = rand() % ((sizeof(relays) / sizeof(relays[0])) + 0) + 0;
@@ -27,6 +30,9 @@ void* random_relay_mode(int delay) {
 }
 
 void* random_led_mode(int delay) {
+	if (verbose) {
+		printf("Random Led!\nDelay: %i\n\n", delay);
+	}
 	int z = 0;
 	while (z < 1) {
 		int value = rand() % ((sizeof(leds) / sizeof(leds[0])) + 0) + 0;
@@ -45,7 +51,6 @@ void* random_led_mode(int delay) {
 
 int main(int argc, char **argv)
 {
-	int validarg = 0;
 	int arg = 1;
 	// Initialize threads;
 	pthread_t program_blink;
@@ -74,16 +79,12 @@ int main(int argc, char **argv)
 				pthread_create(&random_leds, NULL, (void *)random_led_mode(250), NULL);
 				pthread_create(&random_leds, NULL, (void *)random_led_mode(250), NULL);
 				pthread_join(random_leds, 0);
-				
-				validarg = 1;
 			} else if (strcmp(argv[arg], (char *)"random-relay") == 0){
 				// If given argument is equal to "random-led", then start the random_leds thread running the random_led_mode (AKA blink random leds continiously);
 				printf("Random Relay Mode!\n");
 				pthread_create(&random_relays, NULL, (void *)random_relay_mode(500), NULL);
 				pthread_create(&random_relays, NULL, (void *)random_relay_mode(500), NULL);
 				pthread_join(random_relays, 0);
-				
-				validarg = 1;
 			} else if (strcmp(argv[arg], (char *)"random-all") == 0){
 				int delay = 500;
 				if (argv[arg+1] == NULL) {
@@ -92,19 +93,15 @@ int main(int argc, char **argv)
 					delay = atoi(argv[arg+1]);
 				}
 				// If given argument is equal to "random-led", then start the random_leds thread running the random_led_mode (AKA blink random leds continiously);
-				printf("Random Mode All!\nDelay: %i\n", delay);
+				printf("Random Mode All!\nDelay: %i\n\n", delay);
 				pthread_create(&random_relays, NULL, (void *)random_relay_mode(delay), NULL);
 				pthread_create(&random_leds, NULL, (void *)random_led_mode(delay), NULL);
-				pthread_join(random_relays, 0);
-				
-				validarg = 1;
 			} else if (strcmp(argv[arg], (char *)"test-cycle") == 0){
 				// If given argument is equal to "test-cycle" then cycle through all pins specified in the Config.c file;
 				printf("Test Cycle:\ncycling thru all pins!\n");
-				validarg = 1;
-			} else if (validarg == 0 && strcmp(argv[1], "./Pi-Box") != 0) {
+			} else {
 				// If given argument is equal to anything else give an error that the argument given is not a valid argument;
-				printf("%s is not a valid option!", argv[1]);
+				printf("%s is not a valid option!!\n", argv[1]);
 			}
 		} else {
 			pthread_create(&main_program, NULL, (void *)init_window(argc, argv), NULL);
