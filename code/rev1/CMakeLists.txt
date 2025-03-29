@@ -5,7 +5,14 @@ project(Pi-Box)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTK4 REQUIRED IMPORTED_TARGET gtk4)
 
-add_executable(Pi-Box src/main.c src/window.h src/window.c src/gpio/gpio.c src/gpio/gpio.h src/Config.h src/Config.c)
+file(GLOB pi_box_SRC
+     "src/*.h"
+     "src/*.c"
+     "src/**/*.c"
+     "src/**/*.h"
+)
+
+add_executable(Pi-Box ${pi_box_SRC})
 
 find_library(wiringPi_LIB wiringPi)
 target_link_libraries(Pi-Box ${wiringPi_LIB})
